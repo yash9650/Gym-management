@@ -1,0 +1,23 @@
+{% extends 'navigationbar.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container" style="margin-top:60px">
+    <h2 class="text-center text-primary font-weight-bold">About Us</h2>
+    <br><br>
+    <div class="row">
+        <div class="col=sm-4 text-center">
+            <img src="{% static 'images/img.jpg' %}" width="300" height="200" class="img-responsive">
+        </div>
+        <div class="col-sm-8 text-center mt-5">
+            Hello there<br>
+            This is our GYM MANAGEMENT SYSTEM PROJECT developed by Yash, Avantik, and Aryan using python django, html , css , javascript amd bootstrap.
+        </div>
+    </div>
+
+</div>
+<footer class="text-center font-weight-bold mt-5">
+    Copyright &copy; 2021, All Rights Reserved
+</footer>
+
+{% endblock %}
