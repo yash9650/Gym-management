@@ -5,7 +5,7 @@ from django.db import models
 
 class Enquiry(models.Model):
     name = models.CharField(max_length=60)
-    contact = models.CharField(max_length=10)
+    contact = models.CharField(max_length=10,primary_key=True)
     emailid = models.CharField(max_length=60)
     age = models.CharField(max_length=10)
     gender = models.CharField(max_length=10)
@@ -26,7 +26,7 @@ class Equipment(models.Model):
 
 
 class Plan(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=30,primary_key=True)
     amount = models.CharField(max_length=20)
     duraton = models.CharField(max_length=20)
 
@@ -36,10 +36,10 @@ class Plan(models.Model):
 
 class Member(models.Model):
     name = models.CharField(max_length=60)
-    contact = models.CharField(max_length=10)
+    contact = models.CharField(max_length=10,primary_key=True)
     emailid = models.CharField(max_length=60)
     age = models.CharField(max_length=10)
-    gender = models.CharField(max_length=10)
+    gender = models.CharField(max_length=10,default=False)
     plan = models.CharField(max_length=10)
     joindate = models.CharField(max_length=20)
     expiredate = models.CharField(max_length=20)

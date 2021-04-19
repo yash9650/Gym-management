@@ -23,7 +23,7 @@
             <td>{{i.name}}</td>
             <td>{{i.amount}}</td>
             <td>{{i.duraton}}</td>
-            <td><a class="btn btn-danger" href="{%url 'delete_plan' i.id%}" onclick="return confirm('Are You Sure?')">Delete</a></td>
+            <td><a class="btn btn-danger" href="{%url 'delete_plan' i.name%}" onclick="return confirm('Are You Sure?')">Delete</a></td>
 
         </tr>
         {% endfor %}

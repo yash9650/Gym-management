@@ -5,7 +5,7 @@
 
 
 <div class="container" style="margin-top:60px">
-    <h2 class="text-center text-primary font-weight-bold">View Enquiry</h2>
+    <h2 class="text-center text-primary font-weight-bold">View Member</h2>
     <table id="example" class=" table table-hover">
         <thead>
         <tr>
@@ -35,7 +35,7 @@
             <td>{{i.joindate}}</td>
             <td>{{i.expiredate}}</td>
             <td>{{i.initalamount}}</td>
-            <td><a class="btn btn-danger" href="{%url 'delete_member' i.id%}" onclick="return confirm('Are You Sure?')">Delete</a></td>
+            <td><a class="btn btn-danger" href="{%url 'delete_member' i.contact%}" onclick="return confirm('Are You Sure?')">Delete</a></td>
 
         </tr>
         {% endfor %}
